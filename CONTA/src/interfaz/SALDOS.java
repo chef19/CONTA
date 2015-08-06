@@ -5,12 +5,15 @@
  */
 package interfaz;
 
+import codigo.Saldos;
+
 /**
  *
  * @author ANDRES MS
  */
 public class SALDOS extends javax.swing.JFrame {
 
+    static Saldos saldo = new Saldos();
     /**
      * Creates new form SALDOS
      */

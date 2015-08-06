@@ -5,8 +5,6 @@
  */
 package interfaz;
 
-import Implementacion.Movimiento;
-
 /**
  *
  * @author ANDRES MS
@@ -137,7 +135,7 @@ public class AcreditariosBanco extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Integer monto = Integer.valueOf(MontoTF.getText());
-        Movimiento Mov = new Movimiento(CodigoTF.getText(), monto);
+        SALDOS.saldo.BancoA(CodigoTF.getText(), monto);  
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

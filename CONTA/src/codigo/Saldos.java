@@ -13,21 +13,21 @@ import java.util.Map;
  * @author ANDRES MS
  */
 public class Saldos {
-    static Map<Integer, Integer> BcoA = new HashMap<Integer, Integer>();
-    static Map<Integer, Integer> BcoD = new HashMap<Integer, Integer>();
-    static Map<Integer, Integer> CompA = new HashMap<Integer, Integer>();
-    static Map<Integer, Integer> CompD = new HashMap<Integer, Integer>();
+    static Map<String, Integer> BcoA = new HashMap<String, Integer>();
+    static Map<String, Integer> BcoD = new HashMap<String, Integer>();
+    static Map<String, Integer> CompA = new HashMap<String, Integer>();
+    static Map<String, Integer> CompD = new HashMap<String, Integer>();
     
-    public void BancoA(int codigo,int monto){
+    public void BancoA(String codigo,int monto){
         BcoA.put(codigo, monto);
     }
-    public void BancoD(int codigo,int monto){
+    public void BancoD(String codigo,int monto){
         BcoD.put(codigo, monto);
     }
-    public void CompañiaA(int codigo,int monto){
+    public void CompañiaA(String codigo,int monto){
         CompA.put(codigo, monto);
     }
-    public void CompañiaD(int codigo,int monto){
+    public void CompañiaD(String codigo,int monto){
         CompD.put(codigo, monto);
     }
    
