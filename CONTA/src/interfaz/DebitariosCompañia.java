@@ -131,6 +131,7 @@ public class DebitariosCompañia extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Integer monto = Integer.valueOf(MontoTF.getText());
         SALDOS.saldo.CompañiaA(CodigoTF.getText(), monto);  
+        SALDOS.DebCom.add(CodigoTF.getText());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

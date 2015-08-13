@@ -35,11 +35,36 @@ public class Saldos {
         CompD.put(codigo, monto);
     }
 
+    public static int Comparar(String TipoMov, String Codigo, String Codigo2){
+        Integer Monto;
+        Integer Monto2;
+        if (TipoMov == "A"){
+            Monto = BcoA.get(Codigo);
+            Monto2 = CompA.get(Codigo2);
+        }
+        else{
+            Monto = BcoD.get(Codigo);
+            Monto2 = CompD.get(Codigo2);
+        }
+        if(Monto.equals(Monto2)){
+            return 0;
+        }
+        else{
+            return Monto - Monto2;
+        }
+    }
+    
     public static void main(String[] args) {
         BcoA.put("A", 12);
         BcoA.put("B", 13);
         BcoA.put("C", 14);
-        System.out.println(BcoA.get("A"));
+        CompA.put("D", 12);
+        CompA.put("E", 15);
+        CompA.put("F", 13);
+        System.out.println(Comparar("A","A","D"));
+        System.out.println(Comparar("A","C","F"));
+        System.out.println(Comparar("A","B","E"));
+        System.out.println(Comparar("A","B","F"));
     }
 
 }

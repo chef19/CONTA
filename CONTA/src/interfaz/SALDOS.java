@@ -6,6 +6,7 @@
 package interfaz;
 
 import codigo.Saldos;
+import java.util.LinkedList;
 
 /**
  *
@@ -14,6 +15,11 @@ import codigo.Saldos;
 public class SALDOS extends javax.swing.JFrame {
 
     static Saldos saldo = new Saldos();
+    static LinkedList DebCom = new LinkedList();
+    static LinkedList AcreCom = new LinkedList();
+    static LinkedList DebBco = new LinkedList();
+    static LinkedList AcreBco = new LinkedList();
+    
     /**
      * Creates new form SALDOS
      */
@@ -35,7 +41,7 @@ public class SALDOS extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
+        BotonAceptar = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -67,10 +73,10 @@ public class SALDOS extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("ACEPTAR");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        BotonAceptar.setText("ACEPTAR");
+        BotonAceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                BotonAceptarActionPerformed(evt);
             }
         });
 
@@ -160,7 +166,7 @@ public class SALDOS extends javax.swing.JFrame {
                                     .addComponent(jLabel7)
                                     .addGap(93, 93, 93)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jButton2)
+                                        .addComponent(BotonAceptar)
                                         .addComponent(jTextField4)))))
                         .addGap(20, 20, 20))
                     .addGroup(layout.createSequentialGroup()
@@ -212,7 +218,7 @@ public class SALDOS extends javax.swing.JFrame {
                         .addComponent(jLabel8)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
+                    .addComponent(BotonAceptar)
                     .addComponent(jButton1)
                     .addComponent(jButton4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -240,9 +246,9 @@ public class SALDOS extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField6ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void BotonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonAceptarActionPerformed
+        
+    }//GEN-LAST:event_BotonAceptarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -280,8 +286,8 @@ public class SALDOS extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BotonAceptar;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
